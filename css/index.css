@@ -1,0 +1,373 @@
+/* Main and body styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.topBar {
+  background-color: black;
+  color: #a8c31c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.topBarLower {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 40px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.locHourSub {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  color: #78530d;
+  font-size: 16px;
+}
+
+.topBar section {
+  height: min-content;
+  cursor: pointer;
+}
+
+/* Heading w/ Picture */
+header {
+  background: url(../farmPics/primrose2.jpeg);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(3, 3, 3, 0.38);
+  color: white;
+  text-align: center;
+  height: 700px;
+}
+
+#logo {
+height: 120px;
+padding-top: 150px;
+}
+
+#businessDescription {
+
+  /* font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; */
+  font-weight: 800;
+  font-size: 59px;
+}
+
+#contactButton {
+
+    margin-top: 30px;
+  border: solid;
+  border-radius: 20px;
+  height: 45px;
+  width: 160px;
+  font-size: 19px;
+  background-color: #a8c31c;
+  color: white;
+  border-color: white;
+}
+
+#contactButton:hover {
+  background-color: transparent;
+  border-color: #a8c31c;
+  color: #a8c31c;
+  transition: 0.5s;
+}
+
+/* Product Section */
+
+.products {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+text-align: center;
+font-weight: 900;
+font-size: 20px;
+}
+
+/* .productImg {
+  width: 150px;
+  height: 178px;
+} */
+
+/* .products:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.productImg {
+  text-align: center;
+  float: left;
+  width: 248px;
+
+} */
+
+/* Quality section */
+.Quality {
+  margin-top: 20px;
+  padding-top: 30px;
+  background-color: #eae8dd;
+  text-align: center;
+  font-size: 30px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+
+
+.Quality p{
+  flex-basis: 40%;
+  text-align: left;
+}
+
+/* .wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
+} */
+
+
+/* FOR NEXT PICTURES TRY USING FLOATS AND SIZE/WIDTH OF 25%*/
+
+/* Farm Pictures */
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.farmPic {
+  width: 25%;
+  height: 290px;
+  /* display: block;
+  float: left; */
+}
+
+.pictures img {
+  width: 100%;
+  height: 100%;
+}
+.farmPic:hover {
+  filter: brightness(0.5);
+  transition: 0.5s;
+}
+
+/* .pictures::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 20px;
+  background-color: #eae8dd;
+} */
+
+/* Bohemia Family Farm */
+
+.familyFarm {
+  background-color: #eae8dd;
+}
+
+.famFarmFlexWrap {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.famFarmContent {
+  margin-top: 40px;
+  /* width: 40%; */
+  flex-basis: 40%;
+  font-size: 25px;
+  line-height: 40px;
+  /* padding: 5%;
+  float:left; */
+  margin-bottom: 60px;
+}
+
+.famFarmContent img {
+ max-width: 100%;
+ margin-top: 40px;
+}
+
+/* .familyFarm::after {
+  content: '';
+  display: block;
+  clear: both;
+} */
+
+/* Hours of Operation */
+
+.hoursOfOperation h2 {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.monthRow {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+/* .monthRow::after {
+  content: '';
+  display: block;
+  clear: both;
+} */
+
+.months {
+  /* float: left; */
+  text-align: center;
+  width:25%;
+  height: 120px;
+  margin-bottom: 40px;
+}
+
+.b {
+  background-color: #eae8dd;
+}
+
+/* Got a Question? */
+
+.question h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.question p {
+  margin: auto;
+  width: 80%;
+}
+
+
+
+/* Question Forms */
+
+.question {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+}
+
+.question h2 {
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 38px;
+
+
+}
+.question p {
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 32px;
+}
+
+.question input {
+  width: 45%;
+  background-color:#eee;
+  padding: 16px;
+  border: none;
+}
+
+#textForm {
+  margin-right: 2%;
+}
+
+#messageForm {
+  padding: 16px 0 70px 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 96.5%;
+}
+
+.question button {
+position: absolute;
+right: 2%;
+padding: 6px 20px 6px 20px;
+font-size: 32px;
+background-color: #a8c31c;
+color: #fff;
+font-family: inherit;
+}
+
+
+/* Map */
+
+.map {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+iframe {
+  width: 100%;
+
+}
+
+/* Subscribe */
+
+.subscribeColor {
+  background-color: #eae8dd;
+}
+
+.subscribe {
+  height: 300px;
+  padding-top: 60px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe div:nth-of-type(1) {
+width: 30%;
+}
+.subscribe div:nth-of-type(2) {
+  margin-top: 23px;
+  width: 45%;
+}
+.subscribe div {
+  padding: 2.5%
+}
+
+.subscribe input {
+  width: 50%;
+  padding: 14px;
+  border: none;
+}
+
+.subscribe button {
+  display: block;
+  width: 100%;
+  height:40px;
+  margin-top: 15px;
+  background-color: #fff;
+  border: none;
+}
