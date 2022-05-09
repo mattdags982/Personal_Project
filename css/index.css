@@ -163,11 +163,28 @@ font-size: 20px;
 }
 
 .farmPic {
+  position: relative;
   width: 25%;
   height: 290px;
   /* display: block;
   float: left; */
 }
+
+/* .farmPic::before{
+  content:"\2295";
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  font-size: 50px;
+  color: #2ea3f2;
+  visibility: hidden
+;}
+
+.farmPic:hover::before{
+  visibility: visible;
+  transition: 1s;
+  z-index: 1;
+} */
 
 .pictures img {
   width: 100%;
